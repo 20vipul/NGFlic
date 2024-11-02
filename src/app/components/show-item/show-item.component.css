@@ -1,0 +1,50 @@
+.show-Item {
+  display: block;
+  height: 425px;
+  position: relative;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+.show-item-image {
+  height: 375px;
+}
+
+.show-item-image > img ,.defaultposter{
+  width: 100%;
+  height: 375px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  object-fit: cover;
+}
+
+
+
+.show-item-rating {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 10px;
+  left: 10px;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.pi {
+  font-size: 1.2rem;
+  color: orange;
+  margin-right: 5px;
+}
+
+.show-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 48px;
+  padding: 0px 10px;
+  background-color: #181717;
+  width: 100%;
+  border-radius:  0px 0px 5px 5px;
+}

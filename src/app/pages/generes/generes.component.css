@@ -1,0 +1,25 @@
+.generes-links .genreof{
+  display: block;
+  text-align: center;
+  padding: 5px;
+  background-color: var(--primaryColor);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+.generes-links .genre {
+  display: inline-block;
+  padding: 5px;
+  /* background-color: var(--primaryColor); */
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.generes-links > .genre:hover{
+  background-color: #987f7f;
+}

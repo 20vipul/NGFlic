@@ -1,0 +1,29 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  background-color:#212121;
+  border-bottom: 1px solid #414141;
+  padding: 00rem 0.5rem;
+
+}
+.logo >a >img {
+  width: 120px;
+}
+
+.navigation >ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation >ul >li {
+  display: inline;
+  margin-right: 15px;
+}
+.navigation >ul > li>a{
+  text-decoration: none;
+  color: white
+}

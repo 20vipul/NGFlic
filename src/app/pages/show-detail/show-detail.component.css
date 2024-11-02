@@ -1,0 +1,58 @@
+::ng-deep .p-tabview .p-tabview-nav {
+  justify-content: center;
+}
+
+::ng-deep .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  color: var(--primaryColor)
+}
+
+::ng-deep .p-tabview .p-tabview-nav .p-tabview-ink-bar {
+  background-color: var(--primaryColor)
+}
+
+.poster {
+  max-width: 100%;
+}
+
+.overview {
+  line-height: 1.5rem;
+}
+
+.stat {
+  display: flex;
+  margin-bottom: 15px;
+}
+.stat .label {
+  width: 150px;
+  font-weight: bold;
+}
+.stat .value {
+  color: var(--primaryColor);
+}
+.show-image {
+ width: 100%;
+}
+
+.actor{
+  padding: 10px;
+}
+
+.actor > img {
+  width: 100%;
+  max-width: 270px;
+  max-height: 450px;
+  min-width: 220px;
+  min-height: 330px;
+}
+
+.actor > div {
+  text-align: center;
+}
+
+.defaulmsg{
+  text-align: center;
+  color: var(--primaryColor);
+  padding: 20px;
+  font-size: 1.7rem;
+  border-bottom: 1px solid white;
+}

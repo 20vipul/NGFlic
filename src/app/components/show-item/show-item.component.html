@@ -1,0 +1,16 @@
+<!-- <a class="show-Item" *ngIf="showItem" [routerLink]="'detail/'+showItem.id+ '/'+ ShowType">  this generate a relative path and each time append the urls with -->
+<a class="show-Item" *ngIf="showItem"
+  [routerLink]="'/detail/'+showItem.id+ '/'+ ShowType"><!-- here we generat an absolute pathe each time the contenet is clicked -->
+  <!-- <a class="show-Item" *ngIf="showItem" (click)="goToDetail()"> -->
+  <div class="show-item-rating">
+    <i class="pi pi-star"></i>
+    <span> {{ showItem.vote_average | number: '1.1-1' }} / 10</span>
+  </div>
+  <div class="show-item-image">
+    <img [src]="imageBaseUrl +'w342' + showItem.poster_path " [alt]="showItem.title" />
+
+  </div>
+  <div class="show-item-title">
+    {{ showItem.title }}
+  </div>
+</a>

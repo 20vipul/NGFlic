@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="grid search">
+    <div class="col-12">
+      <span>
+        <i class="pi pi-search icon"></i>
+        <input class="search-field" type="text" pInputText [(ngModel)]="searchValue" (change)="searchChanged()" />
+      </span>
+    </div>
+  </div>
+  <ng-container *ngIf="showList$ |async as showList ">
+    <div class="grid">
+      <div class="col-2" *ngFor="let show of showList.results">
+        <app-show-item [showItem]="show"></app-show-item>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="col-12">
+        {{ showList.total_results }}
+        <p-paginator (onPageChange)="pageChanged($event)" [rows]="20" [totalRecords]="showList.total_results" />
+      </div>
+    </div>
+  </ng-container>
+</div>
